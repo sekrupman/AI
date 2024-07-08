@@ -134,3 +134,46 @@ text-shadow: 0 2px 3px rgba(0,0,0,0.1);
 color:#d83c3c;
 text-decoration:none;
 }
+
+/* .respon{
+    display: flex;
+    justify-content: center;
+    top:20rem;
+    position: relative;
+} */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #pertanyaan {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .respon-container {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    padding: 15px;
+    left:-15rem;
+    background: #333;
+    color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    word-break: break-word;
+    position: absolute;
+    overflow-x: auto;
+    max-height: 500px;
+  }
+  
+  /* .respon-container .hljs {
+    overflow:auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  } */
