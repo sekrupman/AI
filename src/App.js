@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import MainPage from "./component/MainPage";
+import SwitchDark from "./component/switchDark";
+import "./style/global.css";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.setAttribute("data-dark-mode", isDarkMode ? "true" : "false");
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <div className="main-page">
+        <MainPage />
+      </div>
+      <div className="button-switch-dark">
+        <SwitchDark toggleDarkMode={toggleDarkMode} />
+      </div>
     </div>
   );
 }
