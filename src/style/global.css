@@ -5,6 +5,11 @@ body, html {
   display: flex;
   align-items: flex-start; 
   justify-content: center;
+  /* overflow-y:auto; */
+}
+
+body{
+  overflow: auto;
 }
 
 .main-page {
