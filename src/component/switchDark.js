@@ -13,7 +13,8 @@ function SwitchDark() {
     );
   };
   return (
-    <div>
+    <>
+    <div className="button-switch-mode">
       <div class="controls"></div>
       <button
         class="toggle"
@@ -615,6 +616,7 @@ function SwitchDark() {
         Switch Theme
       </h4>
     </div>
+    </>
   );
 }
 

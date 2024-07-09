@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MainPage from "./component/MainPage";
 import SwitchDark from "./component/switchDark";
 import "./style/global.css";
+import "./style/responsive.css"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

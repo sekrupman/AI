@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px){
+
+    .button-switch-mode, .toggle, .toggle__content{
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .form-wrapper, .form-wrapper input, .form-wrapper button{
+        width: 100%;
+    }
+
+    .respon-container{
+        width: 125%;
+        left: -3rem;
+    }
+}

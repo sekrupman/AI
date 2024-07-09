@@ -29,6 +29,7 @@ function Form() {
         <form className="form-wrapper cf" onSubmit={handleSubmit}>
           <input
             type="text"
+            className="form-input"
             id="pertanyaan"
             placeholder="Search here..."
             value={query}
