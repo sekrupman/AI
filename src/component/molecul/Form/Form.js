@@ -40,7 +40,7 @@ function Form() {
       </div>
         {data ? (
       <div className="col respon-container">
-          <SyntaxHighlighter language="swift" style={darcula}>
+          <SyntaxHighlighter language="swift" style={darcula} wrapLongLines={true}>
             {data.toString()}
           </SyntaxHighlighter>
           </div>) : null}

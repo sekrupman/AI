@@ -160,20 +160,24 @@ text-decoration:none;
     display: flex;
     justify-content: center;
     width: 1000px;
+    max-height: 500px;
     padding: 15px;
-    left:-15rem;
+    left: -15rem;
     background: #333;
-    color: #fff; 
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
-    word-break: break-word;
+    word-wrap: break-word;
     position: absolute;
-    overflow-x: auto;
-    max-height: 500px;
-  }
+    overflow-y: auto; 
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+}
+
   
   /* .respon-container .hljs {
     overflow:auto;
     white-space: pre-wrap;
-    word-wrap: break-word;
-  } */
+    /* word-wrap: break-word; */
+  /* } */
