@@ -3,6 +3,8 @@ import "./style.css";
 import { requestToGroq } from "../../../utils/Groq";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import saweria from "../../../assets/saweria.png";
+import saweriaPerson from "../../../assets/saweria-person.png";
 
 function Form() {
   const [data, setData] = useState("");
@@ -39,12 +41,23 @@ function Form() {
           <button type="submit">Search</button>
         </form>
       </div>
+      <div className="container">
         {data ? (
-      <div className="col respon-container">
-          <SyntaxHighlighter language="swift" style={darcula} wrapLongLines={true}>
-            {data.toString()}
-          </SyntaxHighlighter>
-          </div>) : null}
+          <div className="respon-container">
+            <SyntaxHighlighter
+              language="swift"
+              style={darcula}
+              wrapLongLines={true}
+            >
+              {data.toString()}
+            </SyntaxHighlighter>
+          </div>
+        ) : null}
+        <div className={`col saweria ${data ? 'with-data' : 'no-data'}`}>
+          <img src={saweria} alt="saweria" />
+          <img src={saweriaPerson} alt="saweria-person" />
+        </div>
+      </div>
     </div>
   );
 }

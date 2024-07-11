@@ -173,6 +173,7 @@ text-decoration:none;
     overflow-x: hidden;
     white-space: pre-wrap;
     margin-bottom: 2rem;
+    flex: 1;
 }
 
   
@@ -181,3 +182,33 @@ text-decoration:none;
     white-space: pre-wrap;
     /* word-wrap: break-word; */
   /* } */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+  }
+  
+  .respon-saweria-wrapper {
+    display: flex;
+  }
+
+  .saweria{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .saweria.with-data {
+    bottom : -47rem;
+  }
+  
+  .saweria.no-data {
+    margin-bottom: 0;
+  }
+
+  .saweria img{
+    width: 50%;
+  }
